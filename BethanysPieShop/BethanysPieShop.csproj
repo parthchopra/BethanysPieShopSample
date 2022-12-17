@@ -19,6 +19,7 @@
     <None Remove="Microsoft.EntityFrameworkCore" />
     <None Remove="Microsoft.EntityFrameworkCore.Sqlite" />
     <None Remove="Microsoft.EntityFrameworkCore.Tools" />
+    <None Remove="Views\Home\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
@@ -29,6 +30,7 @@
     <Folder Include="Views\" />
     <Folder Include="Views\Shared\" />
     <Folder Include="Views\Pie\" />
+    <Folder Include="Views\Home\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\" />

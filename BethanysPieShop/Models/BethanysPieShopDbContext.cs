@@ -5,7 +5,7 @@ namespace BethanysPieShop.Models
 {
 	public class BethanysPieShopDbContext : DbContext
 	{
-		public BethanysPieShopDbContext(DbContextOptions<BethanysPieShopDbContext> options)
+		public BethanysPieShopDbContext(DbContextOptions<BethanysPieShopDbContext> options) : base(options)
 		{
 
 		}
