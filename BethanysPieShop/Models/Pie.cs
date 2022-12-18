@@ -1,8 +1,13 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace BethanysPieShop.Models
 {
 	public class Pie
 	{
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int PieId { get; set; }
         public string Name { get; set; } = string.Empty;
         public string? ShortDescription { get; set; }

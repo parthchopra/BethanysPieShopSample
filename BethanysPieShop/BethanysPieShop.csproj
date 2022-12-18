@@ -20,6 +20,16 @@
     <None Remove="Microsoft.EntityFrameworkCore.Sqlite" />
     <None Remove="Microsoft.EntityFrameworkCore.Tools" />
     <None Remove="Views\Home\" />
+    <None Remove="Views\ShoppingCart\" />
+    <None Remove="Views\Shared\Components\" />
+    <None Remove="Components\" />
+    <None Remove="Views\Shared\Components\ShoppingCartSummary\" />
+    <None Remove="Views\Shared\Components\CategoryMenu\" />
+    <None Remove="TagHelpers\" />
+    <None Remove="Views\Contact\" />
+    <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
+    <None Remove="Migrations\" />
+    <None Remove="Views\Order\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
@@ -31,10 +41,20 @@
     <Folder Include="Views\Shared\" />
     <Folder Include="Views\Pie\" />
     <Folder Include="Views\Home\" />
+    <Folder Include="Views\ShoppingCart\" />
+    <Folder Include="Views\Shared\Components\" />
+    <Folder Include="Components\" />
+    <Folder Include="Views\Shared\Components\ShoppingCartSummary\" />
+    <Folder Include="Views\Shared\Components\CategoryMenu\" />
+    <Folder Include="TagHelpers\" />
+    <Folder Include="Views\Contact\" />
+    <Folder Include="Migrations\" />
+    <Folder Include="Views\Order\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\" />
     <Content Remove="wwwroot\css\" />
+    <Content Remove="libman.json" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.1" />
@@ -44,5 +64,13 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libman.json" Condition="'$(ExcludeConfigFilesFromBuildOutput)'!='true'">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </None>
   </ItemGroup>
 </Project>
